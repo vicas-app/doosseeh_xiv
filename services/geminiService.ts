@@ -2,7 +2,12 @@
 import { GoogleGenAI } from "@google/genai";
 
 // Fix: Initialize GoogleGenAI using a named parameter and process.env.API_KEY directly as per guidelines
-const ai = new GoogleGenAI({ apiKey: process.env.API_KEY });
+// Fix: Initialize GoogleGenAI using a named parameter and import.meta.env.VITE_GEMINI_API_KEY
+const apiKey = import.meta.env.VITE_GEMINI_API_KEY;
+if (!apiKey) {
+  console.warn("VITE_GEMINI_API_KEY is not set. Gemini features will not work.");
+}
+const ai = new GoogleGenAI({ apiKey: apiKey || "dummy-key" }); // Prevent crash on init, but calls will fail if key is invalid
 
 export const getStylistAdvice = async (userInput: string) => {
   try {
