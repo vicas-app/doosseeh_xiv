@@ -1,0 +1,132 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+    <!-- Primary Meta Tags -->
+    <title>Doosseeh_xiv | Premium Nigerian Fashion & Afro-Luxury</title>
+    <meta name="title" content="Doosseeh_xiv | Premium Nigerian Fashion & Afro-Luxury">
+    <meta name="description" content="Experience the pinnacle of Nigerian craftsmanship. Discover a signature style that blends heritage with modern Gidi flair. Curated in Lagos, worn by the world.">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://doosseeh.ng/">
+    <meta property="og:title" content="Doosseeh_xiv | Premium Nigerian Fashion">
+    <meta property="og:description" content="Redefining the modern wardrobe through sustainable practices and elite Nigerian craftsmanship.">
+    <meta property="og:image" content="https://res.cloudinary.com/dhojhfbsz/image/upload/v1770647930/logo_t2ucd9.png">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://doosseeh.ng/">
+    <meta property="twitter:title" content="Doosseeh_xiv | Afro-Luxury Redefined">
+    <meta property="twitter:description" content="From Lagos to the world. We define the future of African high-fashion.">
+    <meta property="twitter:image" content="https://res.cloudinary.com/dhojhfbsz/image/upload/v1770647930/logo_t2ucd9.png">
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap" rel="stylesheet">
+    <script>
+      tailwind.config = {
+        darkMode: 'class',
+        theme: {
+          extend: {
+            fontFamily: {
+              serif: ['Playfair Display', 'serif'],
+              sans: ['Plus Jakarta Sans', 'sans-serif'],
+            },
+          },
+        },
+      }
+    </script>
+    <style>
+      body {
+        font-family: 'Plus Jakarta Sans', sans-serif;
+        background-color: #ffffff;
+        overflow-x: hidden;
+        transition: background-color 0.5s ease, color 0.5s ease;
+      }
+      .dark body {
+        background-color: #0a0a0a;
+        color: #f5f5f5;
+      }
+      h1, h2, h3, .font-serif {
+        font-family: 'Playfair Display', serif;
+      }
+      .no-scrollbar::-webkit-scrollbar {
+        display: none;
+      }
+      .no-scrollbar {
+        -ms-overflow-style: none;
+        scrollbar-width: none;
+      }
+      @keyframes fadeUp {
+        from { opacity: 0; transform: translateY(20px); }
+        to { opacity: 1; transform: translateY(0); }
+      }
+      .animate-fade-up {
+        animation: fadeUp 0.8s ease-out forwards;
+      }
+      
+      /* Splash Screen Animations */
+      @keyframes letter-reveal {
+        from { opacity: 0; transform: translateY(30px); filter: blur(10px); }
+        to { opacity: 1; transform: translateY(0); filter: blur(0); }
+      }
+      .animate-letter {
+        display: inline-block;
+        animation: letter-reveal 0.8s cubic-bezier(0.22, 1, 0.36, 1) forwards;
+        opacity: 0;
+      }
+      
+      @keyframes logo-entrance {
+        from { opacity: 0; transform: scale(0.8) translateY(-20px); filter: brightness(0); }
+        to { opacity: 1; transform: scale(1) translateY(0); filter: brightness(1); }
+      }
+      .animate-logo-splash {
+        animation: logo-entrance 1.2s cubic-bezier(0.34, 1.56, 0.64, 1) forwards;
+      }
+
+      @keyframes splash-exit {
+        0% { transform: translateY(0); }
+        100% { transform: translateY(-100%); }
+      }
+      .exit-splash {
+        animation: splash-exit 1s cubic-bezier(0.77, 0, 0.175, 1) forwards;
+      }
+
+      /* Logo filters */
+      .logo-filter-light {
+        filter: invert(1) contrast(200%);
+        mix-blend-mode: multiply;
+      }
+      .logo-filter-dark {
+        mix-blend-mode: screen;
+      }
+      
+      * {
+        transition-property: background-color, border-color, color, fill, stroke;
+        transition-duration: 0.5s;
+        transition-timing-function: ease;
+      }
+    </style>
+  <script type="importmap">
+{
+  "imports": {
+    "lucide-react": "https://esm.sh/lucide-react@^0.563.0",
+    "react-dom/": "https://esm.sh/react-dom@^19.2.4/",
+    "react": "https://esm.sh/react@^19.2.4",
+    "react/": "https://esm.sh/react@^19.2.4/",
+    "@google/genai": "https://esm.sh/@google/genai@^1.40.0"
+  }
+}
+</script>
+<link rel="stylesheet" href="/index.css">
+</head>
+  <body>
+    <div id="root"></div>
+  <script type="module" src="/index.tsx"></script>
+</body>
+</html>
